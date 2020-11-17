@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     margin: 0;
     height: 100%;
     font-family: 'Oswald', sans-serif;
@@ -7,9 +8,11 @@ html, body {
 h1 {
     text-align: center;
 }
-.container{
+
+.container {
     width: 910px;
-    margin: 0 auto;
+    padding: 30px;
+    margin: 20px auto;
     background-color: blanchedalmond;
 }
 
@@ -22,38 +25,26 @@ h1 {
 }
 
 .add-todo-wrapper {
-    display: flex;
     width: 500px;
     min-height: 40px;
-    align-items: center;
     background-color: rgba(62, 69, 102, 0.336);
     border-radius: 5px;
-    padding: 10px;
+    padding: 15px 15px 8px 15px;
 }
 
 .input-wrapper {
-    width: 80%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .input-wrapper input {
-    width: 100%;
-    height: 25px;
-}
-
-.button-wrapper {
-    width: 20%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.button-wrapper button {
     width: 80%;
-    background-color: rgb(213, 221, 217);
-    color: #000000;
-    outline: none;
-    border: none;
     height: 25px;
-    cursor: pointer;
+    margin-right: 15px;
+}
+
+#add-task-btn {
+    width: 20%;
 }
 
 .todo-item {
@@ -67,7 +58,7 @@ h1 {
     background-color: rgba(62, 69, 102, 0.336);
 }
 
-.todo-item.checked{
+.todo-item.checked {
     background-color: darkgrey;
     opacity: 0.5;
 }
@@ -104,15 +95,16 @@ h1 {
     cursor: pointer;
     background-color: inherit;
 }
-.buttons button:hover{
+
+.buttons button:hover {
     font-size: 20px;
     transition: 0.4s ease-in-out;
 }
-.buttons input:hover{
+
+.buttons input:hover {
     width: 20px;
     height: 20px;
     transition: 0.4s ease-in-out;
-
 }
 
 @keyframes opacity {
